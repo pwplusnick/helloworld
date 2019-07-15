@@ -9,7 +9,7 @@ pipeline {
         }
         stage('\u27A1 Build') {
             steps {
-                sh '''cc $WORKSPACE/helloworld/hello.c -o $WORKSPACE/hello'''
+                sh '''cc $WORKSPACE/hello.c -o $WORKSPACE/hello'''
             }
         }
         stage('\u27A1 Run') {
